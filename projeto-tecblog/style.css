@@ -1,0 +1,125 @@
+/* CONFIGURAÇÃO PRINCIPAIS*/
+@charset "UTF-8";
+ * {
+    margin: 0;
+    padding: 0;
+ }
+ body {
+    font-family: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #E6E6E6;
+ }  
+ /* CONFIGURAÇÃO PRINCIPAIS*/
+ /* COMEÇO DE CABEÇALHO*/
+ #cabecalho {
+    width: 98dvw;
+    height: 180px;
+    background-color: #F7B600;
+    text-align: center;
+    font-size: 1.5em;
+ }
+#h1 {
+   color: #4E4E4E;
+   display: inline;
+}
+#h1-2 {
+   color: #ffffff;
+   display: inline;
+}
+.logo {
+   position: relative;
+   top: 50px;
+}
+#links {
+   position: relative;
+   top: 70px;
+   padding: 10px;
+   font-size: 1em;
+ } 
+ #links > a:hover {
+   background-color: white;
+   color: #F7B600;
+   border-radius: 7px;
+} 
+ #cabecalho a {
+   padding: 10px;
+   text-decoration: none;
+   color: white;
+}
+  /* FIM DE CABEÇALHO*/
+  /* COMEÇO DE CONTEÚDO*/
+ #principal {
+    width: 980px;
+    margin: auto;
+    padding:18px;
+ }
+ #conteudo  {
+    width: 650px;
+    padding: 18px;
+    float:left;
+    background-color: white;
+    text-align: justify;
+ }
+ h2 {
+   color: #F7B600;
+   font-size: 1.5em;
+   margin-bottom: 5px;
+ }
+ span {
+   font-size: 0.8em;
+   margin: 10px 0px;
+   display: inline-block;
+ }
+ 
+ #conteudo2  {
+   width: 650px;
+   padding: 18px;
+   float:left;
+   background-color: white;
+   text-align: justify;
+   margin: 10px 0px;
+}
+img {
+    width: 660px;
+}
+a {
+   text-decoration: none;
+   color: #F7B600;
+}
+a:hover {
+   text-decoration: underline;
+}
+/* FIM DE CONTEÚDO*/
+/* COMEÇO DE AREA LATERAL*/
+
+.postagem {
+    background-color: white;
+    float:right;
+    width: 250px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.postagem > h4 {
+   background-color: #BAC0C4;
+   color: #565656;
+   padding: 8px;
+   font-size: 1.1em;
+}
+.postagem-recentes {
+   font-size: 0.8em;
+   margin:6px;
+   
+}
+.postagem-recentes > a {
+   display: block;
+}
+
+/* FIM DE AREA LATERAL*/
+/* COMEÇO DE RODAPÉ*/
+#rodape {
+   clear: both;
+    background-color: #CCCCCC;
+    text-align: center;
+    width: 98dvw;
+}
+/* FIM DE RODAPÉ*/

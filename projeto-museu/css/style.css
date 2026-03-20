@@ -1,0 +1,179 @@
+/*CONFIGURAÇÃO GERAL DO SITE
+----------------------------*/
+
+@charset "UTF-8";
+body{
+    background: #f4f2ec url(../imagens/fundo.png) repeat-x;
+    font: 12pt 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+width: 1080px;
+margin: 0 auto;
+}
+a, a:visited, a:active{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    
+}
+header {
+    margin-bottom: 40px;
+}
+.clear{
+    clear: both;
+}
+/* FIM CONFIGURAÇÃO GERAL DO SITE
+----------------------------*/
+
+
+/* COMEÇO LOGO
+----------------------------*/
+#logo a{
+    width: 248px;
+    height: 21px;
+    text-indent: -3000px;
+    display: block;
+    background: url(../imagens/logo.png) no-repeat;
+    float: left;
+    
+}
+
+/* FIM LOGO
+----------------------------*/
+/* COMEÇO BARRA DE NAVEGAÇÃO
+----------------------------*/
+nav{
+    width: 700px;
+    float: right;
+}
+nav ul {
+    float: right;
+    margin: 0px ;
+    display: block;
+}
+nav a{
+    padding: 0 8px;
+    color: #9F6913;
+    padding-bottom: 3px;
+}
+nav a:hover{
+    color: white;
+    
+}
+
+
+/* FIM BARRA DE NAVEGAÇÃO
+----------------------------*/
+
+/* COMEÇO PRINCIPAL
+----------------------------*/
+
+#conteudo{
+    width: 710px;
+    float: left;
+}
+h3{
+    color: green;
+    text-align: center;
+}
+article.esquerdo{
+    width: 340px;
+    float: left;
+}
+article.direito{
+    width: 340px;
+    float: right;
+    & p{
+        text-align: justify;
+        overflow-y: scroll;
+        height: 245px;
+    }
+}
+#lista-exposicao li{
+    list-style: disc;
+    & a{
+        color: #824E31;
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+}
+
+
+/* COMEÇO LATERAL
+----------------------------*/
+aside{
+    width: 350px;
+    float: right;
+}
+input#numero-de-pessoas{
+    padding: 0 5px;
+    width: 55px;
+}
+#visita{
+    background-color: #CCC7B4;
+    padding: 13px 27px 27px 27px;
+}
+#visita h3{
+    color: #824E31;
+    text-align: center;
+    border-bottom: solid 1px #824E31;
+    text-transform: uppercase;
+}
+.visita-input{
+    text-align:center;
+    border: none;
+}
+#butao-con{
+    background-color: #9B9274;
+    padding: 10px 20px;
+    width: 300px;
+    color: white;
+    text-transform: uppercase;
+}
+#visita fieldset{
+    border: none;
+    margin: 5px -2px;
+    text-transform: uppercase;
+}
+#galeria{
+    background: #CCC7B4;
+}
+#galeria h3{
+    color: #824E31;
+    text-align: center;
+    border-bottom: 1px solid #824E31;
+}
+#galeria a {
+    display: block;
+    background: url(../imagens/fundo-foto.png) no-repeat;
+    float: left;
+    padding: 17px 15px;
+    margin: 10px 0 0 20px;
+}
+/* FIM LATERAL
+----------------------------*/
+footer{
+    border-top: solid 1px #824E31;
+    text-align: center;
+    & li{
+        padding-top: 20px;
+        & a{
+            color: #9F6913;
+            padding-right: 10px;
+            border-right: solid 1px #824E31;
+        }
+        & #sem-border{
+            border-right: none;
+        }
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+    & strong{
+        color: #824E31;
+    }
+}

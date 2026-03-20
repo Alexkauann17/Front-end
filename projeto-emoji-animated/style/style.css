@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #f7e98e, #f7e542);
+}
+#wrapper{
+    padding: 3em;
+}
+header{
+    margin-bottom: 7em;
+}
+main{
+    display: flex;
+
+}
+main>*{
+    flex: 1 0 0;
+}
+section{
+    
+    font-size: 3em;
+    & strong{
+        color: #b00202;
+        text-transform: uppercase;
+    }
+    & p {
+        font-size: 0.5em;
+        margin-bottom: 0px;
+        & .upper{
+            text-transform: uppercase;
+        }
+    }
+    & input{
+        border: 1px solid #01014d;
+        padding: 1em;
+        border-radius: 0.3em;
+    }
+    & input[type="submit"]{
+        background-color: #01014d;
+        color: white;
+        cursor: pointer;
+    }
+}
+.animation{
+    position: relative;
+}
+.animation > img{
+    position: absolute;
+}
+.animation > img:nth-child(1){
+    top: 3em;
+    animation: topleft 2s infinite alternate;
+}
+.animation > img:nth-child(2){
+    bottom: 4em;
+    z-index: 1;
+    animation: topleft 3.5s ease-in-out infinite alternate;
+}
+.animation > img:nth-child(3){
+    top: 1em;
+    left: 2em;
+    animation: topleft 2.5s ease-in-out infinite alternate;
+}
+.animation > img:nth-child(4){
+    top: 1em;
+    right: 17em;
+    z-index: -1;
+    animation: topleft 3.5s infinite alternate;
+}
+.animation > img:nth-child(5){
+    bottom:2em;
+    right: 15em;
+    animation: topleft 4s infinite alternate;
+}
+.animation > img:nth-child(6){
+   bottom: 1em;
+    left: 25%;
+    animation: topleft 3.5s infinite alternate;
+    
+}
+@keyframes topleft{
+    from{
+        transform: translate(0px, 0px);
+    }
+    to{
+        transform: translate(10px, 20px);
+    }
+}
+

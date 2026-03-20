@@ -1,0 +1,313 @@
+:root{
+    --primary:#800080;
+    --secoundary:color-mix(in srgb, rgb(128, 0, 128), white 40%);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+/*-----------CONFIGURAÇÃO PADRÃO DO WEBSITE-----------*/
+
+
+/*-----------COMEÇO BARRA DE NAVEGAÇÃO-----------*/
+
+
+header{
+    max-width: 71em;
+    margin: auto;
+    text-align: center;
+}
+nav{
+    background-color: var(--primary);
+    text-align: center;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#barra-nav > li:hover{
+    background-color: var(--secoundary);
+    transition: all 0.6s ease-out;
+}
+#barra-nav > li > a{
+    padding: 0.625em;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+}
+/*-----------FIM BARRA DE NAVEGAÇÃO-----------*/
+
+/*-----------COMEÇO SECTION-----------*/
+.heroBanner{
+    padding: 2em;
+    text-align: center;
+}
+.heroBanner-iconPlay{
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    display: none;
+    & img{
+        width: 100%;
+    }
+}
+.heroBanner-title{
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+.heroBanner-subtitle{
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--primary);
+}
+.heroBanner-btn{
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0.5em;
+    text-shadow: 0.8px 1px 7px rgba(0, 0, 0, 0.527);
+    background-color: #37A0A1;
+    padding: 0.8em 1.5em;
+}
+.heroBanner-btn:hover{
+    box-shadow: 0px 0px 10px var(--secoundary);
+    transition: all 0.3s;
+}
+/*-----------FIM SECTION-----------*/
+
+/*-----------COMEÇO MIDDLE-----------*/
+
+.middleContent{
+    padding: 1em;
+}
+.middleContent .maxWidth{
+    margin: auto;
+    max-width: 71em;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex:1 0 auto;
+    width: 100%;
+}
+.col-sm-12{
+    width: 100%;
+}
+
+.col>a{
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+    & h3 {
+        color: var(--primary);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.4em;
+    }
+    & p {
+        color: var(--secoundary);
+        font-size: 1em;
+        text-align: justify;
+    }
+
+    /*-----------FIM MIDDLE-----------*/   
+}
+
+/*------COMEÇO MAIN-CONTENT------*/
+.mainContent{
+    display: flex;
+    background-color: #d0cfcf65;
+}
+.mainContent-article{
+    padding:1em 2em ;
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+}
+.mainContent-title{
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.mainContent-img{
+    width: 100%;
+    & img{
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 3px 1px 4px black;
+    }
+}
+footer{
+    background-color: rgb(29, 29, 80);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width:36.25em) {
+    .mainContent-article{
+        display: flex;
+    }
+    
+    .mainContent-img{
+        margin-right: 1em;
+        max-width: 13em;
+    }
+}
+
+                        /*----------- TABLETS RESPONSIVIDADE-----------*/
+
+
+@media screen and (min-width:45em) {
+
+/*---RESPONSIVIDADE BARRA DE NAVEGAÇÃO------*/
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav{
+        display: flex;
+        background-color: white;
+    }
+    
+    #barra-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #barra-nav > li:hover{
+        background-color: color-mix(in srgb, rgba(128, 0, 128, 0.384), white 50%);
+        border-radius: 2px;
+    }
+    
+    #barra-nav > li > a{
+        color: var(--primary);
+    }
+    
+
+    /*-FIM RESPONSIVIDADE BARRA DE NAVEGAÇÃO---*/
+
+
+    /*---RESPONSIVIDADE COMEÇO HEROBANNER---*/
+
+    .heroBanner{
+        background: var(--primary);
+        
+    }
+
+    .heroBanner-iconPlay{
+        display:block;
+    }
+
+    .heroBanner-title{
+        color: white;
+    }
+
+    .heroBanner-subtitle{
+        color: white;
+    }
+
+    /*---FIM RESPONSIVIDADE HEROBANNER---*/
+
+
+    /*----RESPONSIVIDADE COMEÇO MIDDLE--*/
+    .col-md-6{
+        width:50%;
+    }
+}
+
+
+
+                        /*-----------MONITORES RESPONSIVIDADE-----------*/
+
+
+
+@media screen and (min-width:56.25em) {
+
+    /*-----COMEÇO HEROBANNER-----*/
+
+    .heroBanner{
+        background: url(../images/bg_topo_1198x670.jpg);
+        aspect-ratio: 1198 / 670;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .heroBanner .maxWidth{
+        width: 70%;
+        margin-bottom: 4em;
+    }
+
+    /*-----FIM HEROBANNER-----*/
+
+}
+                    /*-----------MONITORES GRANDES RESPONSIVIDADE-----------*/
+@media screen and (min-width:72em) {
+
+    /*-----COMEÇO HERO BANNER-----*/
+
+    .heroBanner{
+        background-image:linear-gradient(to top, var(--primary) , transparent), url(../images/bg_topo_1600x1374.jpg);
+        background-repeat: no-repeat;
+        background-position:center top;
+        margin: auto;
+        max-height:80dvh;
+        width:96.6%;
+    }
+
+    .heroBanner .maxWidth {
+        width: 50%;
+        
+    }
+
+    .heroBanner-iconPlay{
+        height: 7em;
+        width: 7em;
+    }
+
+ /*-----FIM HERO BANNER-----*/
+
+
+/*-----COMEÇO MIDDLE CONTENT-----*/
+
+.col-xl-3{
+    width: 25%;
+}
+
+ /*-----FIM MIDDLE CONTENT-----*/
+
+
+/*------COMEÇO MAIN-CONTENT------*/
+
+.mainContent>.row{
+    display: flex;
+    flex-direction: row;
+   
+}
+.col-xl-6{
+    margin: auto;
+    width: 40%;
+    border: none;
+}
+}
+
