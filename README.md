@@ -1,173 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Projeto Front-end</title>
+<h1 align="center">🚀 Front-end Project</h1>
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<p align="center">
+  💻 Projeto moderno desenvolvido com foco em performance, design e experiência do usuário
+</p>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f5f5f5;
-      color: #333;
-    }
+<p align="center">
+  <a href="https://alexkauann17.github.io/Front-end/">
+    <img src="https://img.shields.io/badge/🔗 Acessar Projeto-000?style=for-the-badge">
+  </a>
+</p>
 
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+---
 
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
+## 📸 Preview
 
-    button {
-      background: linear-gradient(45deg, #4facfe, #00f2fe);
-      border: none;
-      padding: 12px 20px;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
+<p align="center">
+  <img src="./preview.png" alt="Preview do projeto" width="80%">
+</p>
 
-    button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
+---
 
-    .cards {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
+## 🧠 Sobre o projeto
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      width: 250px;
-      transition: 0.3s;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+Este projeto foi desenvolvido com o objetivo de aprimorar habilidades em desenvolvimento front-end, aplicando boas práticas de:
 
-    .card:hover {
-      transform: translateY(-10px);
-    }
+- Estruturação semântica
+- Design moderno e responsivo
+- Performance e otimização
+- Experiência do usuário (UI/UX)
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.8s ease;
-    }
+A proposta é entregar uma interface limpa, rápida e agradável, simulando um projeto real de mercado.
 
-    .fade-in.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
+---
 
-    .dark {
-      background: #121212;
-      color: white;
-    }
+## ⚡ Funcionalidades
 
-    .dark nav {
-      background: #1e1e1e;
-    }
+✔ Interface moderna e intuitiva  
+✔ Animações suaves ao rolar a página  
+✔ Dark mode 🌙  
+✔ Layout totalmente responsivo  
+✔ Navegação fluida  
 
-    .dark .card {
-      background: #1e1e1e;
-    }
+---
 
-    footer {
-      text-align: center;
-      padding: 20px;
-    }
+## 🛠️ Tecnologias utilizadas
 
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js" />
+</p>
 
-<body>
+---
 
-  <nav>
-    <h2>💻 Meu Projeto</h2>
-    <button id="themeToggle">🌙</button>
-  </nav>
+## 📱 Responsividade
 
-  <section class="hero fade-in">
-    <h1>Bem-vindo ao meu projeto 🚀</h1>
-    <p>Desenvolvimento Front-end moderno e responsivo</p>
-    <a href="#projetos"><button>Ver projetos</button></a>
-  </section>
+O projeto foi desenvolvido para funcionar perfeitamente em:
 
-  <section id="projetos" class="fade-in">
-    <h2 style="text-align:center;">📂 Projetos</h2>
+- 📺 Desktop  
+- 📱 Mobile  
+- 📟 Tablet  
 
-    <div class="cards">
+---
 
-      <div class="card">
-        <h3>Projeto 1</h3>
-        <p>Descrição do projeto.</p>
-        <button>Acessar</button>
-      </div>
+## ⚙️ Como executar
 
-      <div class="card">
-        <h3>Projeto 2</h3>
-        <p>Descrição do projeto.</p>
-        <button>Acessar</button>
-      </div>
+```bash
+# Clone o repositório
+git clone https://github.com/alexkauann17/Front-end.git
 
-      <div class="card">
-        <h3>Projeto 3</h3>
-        <p>Descrição do projeto.</p>
-        <button>Acessar</button>
-      </div>
+# Entre na pasta
+cd Front-end
 
-    </div>
-  </section>
+# Abra o arquivo index.html no navegador
 
-  <footer>
-    <p>Feito por Alex Kauan 🚀</p>
-  </footer>
 
-  <script>
-    // ANIMAÇÃO
-    const elements = document.querySelectorAll('.fade-in');
+👨‍💻 Autor
+<p align="center"> <b>Alex Kauan</b> 🚀 </p> <p align="center"> <a href="https://github.com/alexkauann17"> <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"> </a> </p>
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    });
 
-    elements.forEach(el => observer.observe(el));
+⭐ Apoie o projeto
 
-    // DARK MODE
-    const toggle = document.getElementById('themeToggle');
+Se você curtiu esse projeto, considere deixar uma ⭐ no repositório.
+Isso ajuda muito e motiva a continuar evoluindo! 🙌
 
-    toggle.onclick = () => {
-      document.body.classList.toggle('dark');
-    };
-  </script>
 
-</body>
-</html>
+💡 Observação
+
+Este projeto faz parte da minha jornada como desenvolvedor e está em constante evolução.
+
